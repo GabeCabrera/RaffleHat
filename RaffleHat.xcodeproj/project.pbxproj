@@ -13,6 +13,7 @@
 		CE3EDE0F1CB6943C00EF77C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE0D1CB6943C00EF77C2 /* Main.storyboard */; };
 		CE3EDE111CB6943C00EF77C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */; };
 		CE3EDE141CB6943C00EF77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE121CB6943C00EF77C2 /* LaunchScreen.storyboard */; };
+		CE3EDE1C1CB704E200EF77C2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3EDE131CB6943C00EF77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3EDE151CB6943C00EF77C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CE3EDE071CB6943C00EF77C2 /* AppDelegate.swift */,
 				CE3EDE091CB6943C00EF77C2 /* FirstViewController.swift */,
 				CE3EDE0B1CB6943C00EF77C2 /* SecondViewController.swift */,
+				CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */,
 				CE3EDE0D1CB6943C00EF77C2 /* Main.storyboard */,
 				CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */,
 				CE3EDE121CB6943C00EF77C2 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				CE3EDE0C1CB6943C00EF77C2 /* SecondViewController.swift in Sources */,
 				CE3EDE081CB6943C00EF77C2 /* AppDelegate.swift in Sources */,
 				CE3EDE0A1CB6943C00EF77C2 /* FirstViewController.swift in Sources */,
+				CE3EDE1C1CB704E200EF77C2 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,7 @@
 				CE3EDE1A1CB6943C00EF77C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
