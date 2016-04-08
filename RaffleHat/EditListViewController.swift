@@ -8,11 +8,23 @@
 
 import UIKit
 
-class EditListViewController: UIViewController {
+class EditListViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var editListTextField: UITextField!
+    
+    @IBAction func editListCancelButton(sender: AnyObject) {
+        dismissViewController()
+    }
+    @IBAction func editListSaveButton(sender: AnyObject) {
+        dismissViewController()
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        editListTextField.delegate = self
+        hideKeyboardWhenTappedAround()
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +32,11 @@ class EditListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func textFieldShouldReturn(userText: UITextField) -> Bool {
+        editListTextField.resignFirstResponder()
+        return true;
+    }
+
 
     /*
     // MARK: - Navigation

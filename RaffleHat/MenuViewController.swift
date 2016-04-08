@@ -1,5 +1,5 @@
 //
-//  EditEventViewController.swift
+//  MenuViewController.swift
 //  RaffleHat
 //
 //  Created by Gabe on 4/8/16.
@@ -8,20 +8,27 @@
 
 import UIKit
 
-class EditEventViewController: UIViewController, UITextFieldDelegate {
-
-    @IBOutlet weak var editEventNameTextField: UITextField!
+//setup for other view controllers
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
     
-    @IBAction func editEventCancelButton(sender: AnyObject) {
-        dismissViewController()
+    func dismissViewController(){
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    @IBAction func editEventSaveButton(sender: AnyObject) {
-        dismissViewController()
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
+}
+
+class MenuViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        editEventNameTextField.delegate = self
-        hideKeyboardWhenTappedAround()
+
         // Do any additional setup after loading the view.
     }
 
@@ -29,10 +36,7 @@ class EditEventViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func textFieldShouldReturn(userText: UITextField) -> Bool {
-        editEventNameTextField.resignFirstResponder()
-        return true;
-    }
+    
 
     /*
     // MARK: - Navigation

@@ -11,15 +11,16 @@ import UIKit
 class EditPictureViewController: UIViewController {
 
     @IBAction func editPictureCancelButton(sender: AnyObject) {
-         dismissViewControllerAnimated(true, completion: nil)
+        dismissViewController()
     }
     @IBAction func editPictureSaveButton(sender: AnyObject) {
-         dismissViewControllerAnimated(true, completion: nil)
+        dismissViewController()
     }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -28,7 +29,7 @@ class EditPictureViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation

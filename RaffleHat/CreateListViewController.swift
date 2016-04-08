@@ -8,13 +8,22 @@
 
 import UIKit
 
-class CreateListViewController: UIViewController {
+class CreateListViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var createListNameTextField: UITextField!
+    
     @IBAction func createListCancelButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismissViewController()
+    }
+    @IBAction func createListSaveButton(sender: AnyObject) {
+        dismissViewController()
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        createListNameTextField.delegate = self
+        hideKeyboardWhenTappedAround()
+
 
         // Do any additional setup after loading the view.
     }
@@ -23,7 +32,10 @@ class CreateListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func textFieldShouldReturn(userText: UITextField) -> Bool {
+        createListNameTextField.resignFirstResponder()
+        return true;
+    }
 
     /*
     // MARK: - Navigation

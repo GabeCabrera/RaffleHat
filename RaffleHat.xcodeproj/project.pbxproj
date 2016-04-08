@@ -18,6 +18,7 @@
 		CE3EDE261CB7F0A100EF77C2 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE251CB7F0A100EF77C2 /* EditEventViewController.swift */; };
 		CE3EDE281CB7F0B300EF77C2 /* EditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE271CB7F0B300EF77C2 /* EditListViewController.swift */; };
 		CE3EDE2A1CB7F0C600EF77C2 /* EditPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE291CB7F0C600EF77C2 /* EditPictureViewController.swift */; };
+		CEE52D9A1CB821EC00997B1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE52D991CB821EC00997B1B /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CE3EDE251CB7F0A100EF77C2 /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		CE3EDE271CB7F0B300EF77C2 /* EditListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListViewController.swift; sourceTree = "<group>"; };
 		CE3EDE291CB7F0C600EF77C2 /* EditPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPictureViewController.swift; sourceTree = "<group>"; };
+		CEE52D991CB821EC00997B1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3EDE071CB6943C00EF77C2 /* AppDelegate.swift */,
+				CEE52D991CB821EC00997B1B /* MenuViewController.swift */,
 				CE3EDE231CB7E07400EF77C2 /* ListsViewController.swift */,
 				CE3EDE211CB7E05D00EF77C2 /* EventsViewController.swift */,
 				CE3EDE1D1CB7DEF200EF77C2 /* CreateEventViewController.swift */,
@@ -158,6 +161,7 @@
 				CE3EDE221CB7E05D00EF77C2 /* EventsViewController.swift in Sources */,
 				CE3EDE201CB7DFA300EF77C2 /* CreateListViewController.swift in Sources */,
 				CE3EDE2A1CB7F0C600EF77C2 /* EditPictureViewController.swift in Sources */,
+				CEE52D9A1CB821EC00997B1B /* MenuViewController.swift in Sources */,
 				CE3EDE261CB7F0A100EF77C2 /* EditEventViewController.swift in Sources */,
 				CE3EDE1E1CB7DEF200EF77C2 /* CreateEventViewController.swift in Sources */,
 				CE3EDE281CB7F0B300EF77C2 /* EditListViewController.swift in Sources */,
