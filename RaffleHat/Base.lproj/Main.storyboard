@@ -115,7 +115,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-2h-Tpr">
                                 <rect key="frame" x="0.0" y="64" width="606" height="413"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="eventCell" textLabel="8JO-4Y-ak4" style="IBUITableViewCellStyleDefault" id="MEu-rG-2Y8">
@@ -218,7 +218,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="evH-hr-tR2">
                                 <rect key="frame" x="-3" y="64" width="606" height="413"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" id="Vwg-Bv-WRW">
@@ -400,6 +400,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createEventSaveButton:" destination="gSr-gg-Udd" eventType="touchUpInside" id="czy-4m-v4g"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV5-bZ-vjk">
                                 <rect key="frame" x="243" y="179" width="107" height="30"/>
@@ -451,13 +454,16 @@
                                     <constraint firstAttribute="width" constant="100" id="aTX-oM-Q89"/>
                                 </constraints>
                                 <state key="normal" image="imageView"/>
+                                <connections>
+                                    <segue destination="5Cb-e9-4b2" kind="show" id="XMI-nb-k4U"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JWj-gR-p4y">
                                 <rect key="frame" x="220" y="310" width="160" height="148"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="c72-wZ-1yg" detailTextLabel="gdW-1i-Qtz" style="IBUITableViewCellStyleValue1" id="D85-1Q-7Lj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prizeCell" textLabel="c72-wZ-1yg" detailTextLabel="gdW-1i-Qtz" style="IBUITableViewCellStyleValue1" id="D85-1Q-7Lj">
                                         <rect key="frame" x="0.0" y="28" width="160" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D85-1Q-7Lj" id="XrA-SK-MpE">
@@ -519,6 +525,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="eventNameTextField" destination="OV5-bZ-vjk" id="SXS-yS-Wo7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWn-6M-Lpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -559,24 +568,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjg-8I-pIW">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.47058823529999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2gC-jG-LEm" secondAttribute="trailing" id="0uu-5y-Cy5"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="leading" secondItem="mF3-RG-foD" secondAttribute="leading" id="5rb-Vz-3Dn"/>
-                            <constraint firstItem="Pjg-8I-pIW" firstAttribute="bottom" secondItem="O6s-Zn-eVH" secondAttribute="top" id="663-ox-caM"/>
-                            <constraint firstItem="Pjg-8I-pIW" firstAttribute="top" secondItem="mF3-RG-foD" secondAttribute="bottom" id="6h0-Sl-rvh"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="bottom" secondItem="fQV-r9-pc2" secondAttribute="bottom" id="8OG-rl-7VK"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="trailing" secondItem="mF3-RG-foD" secondAttribute="trailing" id="9pf-fI-AF6"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="top" secondItem="c0i-lQ-3Uw" secondAttribute="top" id="C4Z-W1-apC"/>
-                            <constraint firstItem="Pjg-8I-pIW" firstAttribute="leading" secondItem="mF3-RG-foD" secondAttribute="leading" id="Ehn-CD-QBr"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="leading" secondItem="c0i-lQ-3Uw" secondAttribute="leading" id="g8k-2g-EPq"/>
                             <constraint firstItem="2gC-jG-LEm" firstAttribute="bottom" secondItem="mF3-RG-foD" secondAttribute="top" id="mBN-M4-ghA"/>
-                            <constraint firstItem="Pjg-8I-pIW" firstAttribute="trailing" secondItem="mF3-RG-foD" secondAttribute="trailing" id="t8K-iC-D9X"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -613,23 +614,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOU-8f-FBf">
-                                <rect key="frame" x="0.0" y="64" width="600" height="585"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.47058823529999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="leading" secondItem="uGj-ml-yPn" secondAttribute="leading" id="D9j-d5-B2T"/>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="top" secondItem="9lM-rc-o3s" secondAttribute="top" id="Hdx-28-gxn"/>
-                            <constraint firstItem="AOU-8f-FBf" firstAttribute="trailing" secondItem="uGj-ml-yPn" secondAttribute="trailing" id="NhC-99-K4I"/>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="leading" secondItem="9lM-rc-o3s" secondAttribute="leading" id="QBd-8D-Llm"/>
-                            <constraint firstItem="jlj-5l-ZoJ" firstAttribute="top" secondItem="AOU-8f-FBf" secondAttribute="bottom" constant="-49" id="Ujl-Ul-Ng4"/>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="bottom" secondItem="uGj-ml-yPn" secondAttribute="top" id="fJh-pb-Csm"/>
                             <constraint firstAttribute="trailing" secondItem="wc6-QI-Ixb" secondAttribute="trailing" id="fXs-yA-cz7"/>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="bottom" secondItem="sKU-L0-j75" secondAttribute="bottom" id="gNN-Vy-eAd"/>
-                            <constraint firstItem="AOU-8f-FBf" firstAttribute="top" secondItem="uGj-ml-yPn" secondAttribute="bottom" id="ggg-H9-p5Z"/>
-                            <constraint firstItem="AOU-8f-FBf" firstAttribute="leading" secondItem="uGj-ml-yPn" secondAttribute="leading" id="kaS-Pu-1Sx"/>
                             <constraint firstItem="wc6-QI-Ixb" firstAttribute="trailing" secondItem="uGj-ml-yPn" secondAttribute="trailing" id="yq4-jc-YHL"/>
                         </constraints>
                     </view>
@@ -659,9 +652,15 @@
                                         <barButtonItem key="backBarButtonItem" title="Back" id="jfO-u0-qye"/>
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="xmQ-TY-ael">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="editPictureCancelButton:" destination="5Cb-e9-4b2" id="Qda-qS-aG0"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="XXC-Ln-j2L">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="editPictureSaveButton:" destination="5Cb-e9-4b2" id="Ha9-xF-GFY"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -685,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auB-dF-u4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155" y="412"/>
+            <point key="canvasLocation" x="-149" y="481"/>
         </scene>
         <!--EditListViewController-->
         <scene sceneID="tIU-qG-6fd">
@@ -716,24 +715,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-fj-3yA">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.47058823529999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="aQZ-fj-3yA" firstAttribute="leading" secondItem="8eB-22-ypf" secondAttribute="leading" id="2HJ-Os-XIs"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="bottom" secondItem="8eB-22-ypf" secondAttribute="top" id="54B-ta-9vQ"/>
-                            <constraint firstItem="aQZ-fj-3yA" firstAttribute="trailing" secondItem="8eB-22-ypf" secondAttribute="trailing" id="EPs-zg-2dF"/>
-                            <constraint firstItem="aQZ-fj-3yA" firstAttribute="top" secondItem="8eB-22-ypf" secondAttribute="bottom" id="Sne-4v-7Y2"/>
                             <constraint firstAttribute="trailing" secondItem="2fd-jm-42s" secondAttribute="trailing" id="Tsj-kl-oHF"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="bottom" secondItem="5M6-K3-klw" secondAttribute="bottom" id="Uay-Go-GwW"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="leading" secondItem="DeN-eg-gqQ" secondAttribute="leading" id="X5h-lJ-LyW"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="top" secondItem="DeN-eg-gqQ" secondAttribute="top" id="avI-xj-h3P"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="leading" secondItem="8eB-22-ypf" secondAttribute="leading" id="iqq-fY-NNj"/>
                             <constraint firstItem="2fd-jm-42s" firstAttribute="trailing" secondItem="8eB-22-ypf" secondAttribute="trailing" id="sky-eq-2oL"/>
-                            <constraint firstItem="T5j-qX-bPc" firstAttribute="top" secondItem="aQZ-fj-3yA" secondAttribute="bottom" id="ydP-HT-QK7"/>
                         </constraints>
                     </view>
                 </viewController>

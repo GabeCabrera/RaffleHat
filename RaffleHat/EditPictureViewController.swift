@@ -10,6 +10,14 @@ import UIKit
 
 class EditPictureViewController: UIViewController {
 
+    @IBAction func editPictureCancelButton(sender: AnyObject) {
+         dismissViewControllerAnimated(true, completion: nil)
+    }
+    @IBAction func editPictureSaveButton(sender: AnyObject) {
+         dismissViewControllerAnimated(true, completion: nil)
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

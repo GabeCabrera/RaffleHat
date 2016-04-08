@@ -7,15 +7,32 @@
 //
 
 import UIKit
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
-class CreateEventViewController: UIViewController {
+class CreateEventViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var eventNameTextField: UITextField!
+    
     @IBAction func createEventCancelButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    @IBAction func createEventSaveButton(sender: AnyObject) {
+         dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //paste this in viewDidLoad, must have text field hooked up
+        eventNameTextField.delegate = self
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
 
