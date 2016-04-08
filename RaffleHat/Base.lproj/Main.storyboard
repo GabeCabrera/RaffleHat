@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8u3-JC-huP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="-305"/>
+            <point key="canvasLocation" x="-1397" y="-1076"/>
         </scene>
         <!--Events-->
         <scene sceneID="Q0s-5F-KUe">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbD-RQ-oCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="400"/>
+            <point key="canvasLocation" x="-155" y="-1076"/>
         </scene>
         <!--Lists-->
         <scene sceneID="wg7-f3-ORb">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="1085"/>
+            <point key="canvasLocation" x="1129" y="-1076"/>
         </scene>
         <!--Settings-->
         <scene sceneID="toF-my-wAL">
@@ -334,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0Z-HK-qBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="1763"/>
+            <point key="canvasLocation" x="2275" y="-1102"/>
         </scene>
         <!--MasterTabController-->
         <scene sceneID="yl2-sM-qoP">
@@ -355,12 +355,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5" y="-1108"/>
+            <point key="canvasLocation" x="-2279" y="-1076"/>
         </scene>
-        <!--Create Event View Controller-->
+        <!--CreateEventViewController-->
         <scene sceneID="3Mw-NN-PlV">
             <objects>
-                <viewController id="gSr-gg-Udd" customClass="CreateEventViewController" customModule="RaffleHat" sceneMemberID="viewController">
+                <viewController id="gSr-gg-Udd" userLabel="CreateEventViewController" customClass="CreateEventViewController" customModule="RaffleHat" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3tT-K5-X1Y"/>
                         <viewControllerLayoutGuide type="bottom" id="uUl-nM-SHI"/>
@@ -389,30 +389,118 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgs-AC-xkg">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obj-jj-T64">
+                                <rect key="frame" x="220" y="502" width="160" height="26"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="ki2-v7-9er"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV5-bZ-vjk">
+                                <rect key="frame" x="243" y="179" width="107" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.32957287441034483" blue="0.2784313725" alpha="0.40425531914893614" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="6BT-Z2-81d"/>
+                                </constraints>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftW-GZ-3S6">
+                                <rect key="frame" x="220" y="236" width="160" height="26"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="oI1-9u-T87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Participants">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-Ek-UT7">
+                                <rect key="frame" x="220" y="276" width="160" height="26"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="4aS-SA-wXQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Prize List">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLg-TH-84e">
+                                <rect key="frame" x="331" y="466" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.35686274509999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQC-QZ-bfg">
+                                <rect key="frame" x="220" y="471" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-4y-TL6">
+                                <rect key="frame" x="220" y="310" width="160" height="148"/>
+                                <color key="backgroundColor" red="1" green="0.32957287439999999" blue="0.2784313725" alpha="0.19888630314255323" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="6No-uW-Wfw"/>
+                                </constraints>
+                                <string key="text">-Prize			10 -Prize			15 -Prize			20 -Prize			25 -Prize			30 -Prize			35 -Prize			40 -Prize			1</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud9-GJ-gfM">
+                                <rect key="frame" x="250" y="71" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Imz-Va-xwV"/>
+                                    <constraint firstAttribute="width" constant="100" id="aTX-oM-Q89"/>
+                                </constraints>
+                                <state key="normal" image="imageView"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.47058823529999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="leading" secondItem="fdM-Fl-lYh" secondAttribute="leading" id="Eoj-Cz-BbE"/>
-                            <constraint firstItem="mgs-AC-xkg" firstAttribute="leading" secondItem="fdM-Fl-lYh" secondAttribute="leading" id="Nxh-qy-DbI"/>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="trailing" secondItem="fdM-Fl-lYh" secondAttribute="trailing" id="Xp9-J3-Ff3"/>
-                            <constraint firstAttribute="trailing" secondItem="1mT-uQ-lAm" secondAttribute="trailing" id="Yv9-lF-T1P"/>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="bottom" secondItem="3tT-K5-X1Y" secondAttribute="bottom" id="dBh-ib-C26"/>
-                            <constraint firstItem="mgs-AC-xkg" firstAttribute="bottom" secondItem="uUl-nM-SHI" secondAttribute="top" id="lHW-oi-aaj"/>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="leading" secondItem="FJy-jT-WlJ" secondAttribute="leading" id="m39-J4-FS6"/>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="top" secondItem="FJy-jT-WlJ" secondAttribute="top" id="tlL-1d-zC9"/>
-                            <constraint firstItem="mgs-AC-xkg" firstAttribute="trailing" secondItem="fdM-Fl-lYh" secondAttribute="trailing" id="uzM-C6-eSy"/>
-                            <constraint firstItem="mgs-AC-xkg" firstAttribute="top" secondItem="fdM-Fl-lYh" secondAttribute="bottom" id="xfd-tb-922"/>
-                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="bottom" secondItem="fdM-Fl-lYh" secondAttribute="top" id="zlF-qf-XwZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1mT-uQ-lAm" secondAttribute="trailing" id="4KO-2V-qaZ"/>
+                            <constraint firstItem="OV5-bZ-vjk" firstAttribute="top" secondItem="Ud9-GJ-gfM" secondAttribute="bottom" constant="8" symbolic="YES" id="5qv-cO-Pmc"/>
+                            <constraint firstItem="Ud9-GJ-gfM" firstAttribute="centerX" secondItem="ftW-GZ-3S6" secondAttribute="centerX" id="7nL-gy-7pB"/>
+                            <constraint firstItem="Obj-jj-T64" firstAttribute="top" secondItem="XLg-TH-84e" secondAttribute="bottom" constant="5" id="8Db-4n-H1W"/>
+                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="leading" secondItem="fdM-Fl-lYh" secondAttribute="leading" id="8ec-5W-gjT"/>
+                            <constraint firstItem="Ud9-GJ-gfM" firstAttribute="top" secondItem="fdM-Fl-lYh" secondAttribute="bottom" constant="7" id="8ih-tU-1dw"/>
+                            <constraint firstItem="ftW-GZ-3S6" firstAttribute="trailing" secondItem="8aU-Ek-UT7" secondAttribute="trailing" id="8rS-kC-jqG"/>
+                            <constraint firstItem="Ud9-GJ-gfM" firstAttribute="trailing" secondItem="OV5-bZ-vjk" secondAttribute="trailing" id="AWH-9y-CUW"/>
+                            <constraint firstItem="8aU-Ek-UT7" firstAttribute="top" secondItem="ftW-GZ-3S6" secondAttribute="bottom" constant="14" id="FnH-f3-7dQ"/>
+                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="trailing" secondItem="fdM-Fl-lYh" secondAttribute="trailing" id="IYp-0n-2mf"/>
+                            <constraint firstItem="fdM-Fl-lYh" firstAttribute="top" secondItem="3tT-K5-X1Y" secondAttribute="bottom" id="Jve-gJ-pWr"/>
+                            <constraint firstItem="wQC-QZ-bfg" firstAttribute="centerY" secondItem="XLg-TH-84e" secondAttribute="centerY" id="Jxj-nQ-m1F"/>
+                            <constraint firstItem="SFB-4y-TL6" firstAttribute="top" secondItem="8aU-Ek-UT7" secondAttribute="bottom" constant="8" symbolic="YES" id="Kq0-vA-xhV"/>
+                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="leading" secondItem="FJy-jT-WlJ" secondAttribute="leading" id="Lnu-h7-l8f"/>
+                            <constraint firstItem="fdM-Fl-lYh" firstAttribute="top" secondItem="1mT-uQ-lAm" secondAttribute="bottom" id="Oo1-mO-9x0"/>
+                            <constraint firstItem="ftW-GZ-3S6" firstAttribute="leading" secondItem="8aU-Ek-UT7" secondAttribute="leading" id="Pob-sQ-jPg"/>
+                            <constraint firstItem="Ud9-GJ-gfM" firstAttribute="centerX" secondItem="fdM-Fl-lYh" secondAttribute="centerX" id="Rz9-td-xX5"/>
+                            <constraint firstItem="wQC-QZ-bfg" firstAttribute="top" secondItem="SFB-4y-TL6" secondAttribute="bottom" constant="13" id="VNv-vU-Tlx"/>
+                            <constraint firstItem="SFB-4y-TL6" firstAttribute="leading" secondItem="8aU-Ek-UT7" secondAttribute="leading" id="WL7-xN-eHQ"/>
+                            <constraint firstItem="SFB-4y-TL6" firstAttribute="leading" secondItem="wQC-QZ-bfg" secondAttribute="leading" id="dav-xD-Sl4"/>
+                            <constraint firstItem="uUl-nM-SHI" firstAttribute="top" secondItem="Obj-jj-T64" secondAttribute="bottom" constant="23" id="e4g-y4-eLZ"/>
+                            <constraint firstItem="1mT-uQ-lAm" firstAttribute="top" secondItem="FJy-jT-WlJ" secondAttribute="top" id="e6B-qc-Eo6"/>
+                            <constraint firstItem="wQC-QZ-bfg" firstAttribute="leading" secondItem="Obj-jj-T64" secondAttribute="leading" id="jbQ-3p-Mbs"/>
+                            <constraint firstItem="ftW-GZ-3S6" firstAttribute="top" secondItem="OV5-bZ-vjk" secondAttribute="bottom" constant="27" id="lyH-Bw-Af6"/>
+                            <constraint firstItem="SFB-4y-TL6" firstAttribute="trailing" secondItem="8aU-Ek-UT7" secondAttribute="trailing" id="tgP-8g-2Ed"/>
+                            <constraint firstItem="SFB-4y-TL6" firstAttribute="trailing" secondItem="XLg-TH-84e" secondAttribute="trailing" id="ueZ-wp-wQP"/>
+                            <constraint firstItem="XLg-TH-84e" firstAttribute="trailing" secondItem="Obj-jj-T64" secondAttribute="trailing" id="viR-FV-rd7"/>
+                            <constraint firstItem="XLg-TH-84e" firstAttribute="leading" secondItem="wQC-QZ-bfg" secondAttribute="trailing" constant="18" id="xB1-52-UnV"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWn-6M-Lpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="400"/>
+            <point key="canvasLocation" x="-476" y="-300"/>
         </scene>
         <!--CreateListViewController-->
         <scene sceneID="B3k-lf-wo7">
@@ -472,12 +560,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SU5-of-joJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="1085"/>
+            <point key="canvasLocation" x="843" y="-300"/>
         </scene>
         <!--EditEventViewController-->
         <scene sceneID="7lF-vt-53U">
             <objects>
-                <viewController id="adx-D1-cMo" userLabel="EditEventViewController" sceneMemberID="viewController">
+                <viewController id="adx-D1-cMo" userLabel="EditEventViewController" customClass="EditEventViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sKU-L0-j75"/>
                         <viewControllerLayoutGuide type="bottom" id="jlj-5l-ZoJ"/>
@@ -495,9 +583,6 @@
                                         <barButtonItem key="backBarButtonItem" title="Back" id="2YQ-ZP-N7A"/>
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="aHE-3b-ctR">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="49e-Tb-3d3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="7fr-A9-3Ft"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -507,7 +592,7 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOU-8f-FBf">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="585"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
                         </subviews>
@@ -529,12 +614,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ejk-8k-gGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="400"/>
+            <point key="canvasLocation" x="163" y="-300"/>
         </scene>
         <!--EditPictureViewController-->
         <scene sceneID="SE2-Sj-SLb">
             <objects>
-                <viewController id="5Cb-e9-4b2" userLabel="EditPictureViewController" sceneMemberID="viewController">
+                <viewController id="5Cb-e9-4b2" userLabel="EditPictureViewController" customClass="EditPictureViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yHn-un-KeK"/>
                         <viewControllerLayoutGuide type="bottom" id="cuj-LX-fF8"/>
@@ -552,9 +637,6 @@
                                         <barButtonItem key="backBarButtonItem" title="Back" id="jfO-u0-qye"/>
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="xmQ-TY-ael">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="49e-Tb-3d3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="eZH-jK-BAf"/>
-                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="XXC-Ln-j2L">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -581,12 +663,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auB-dF-u4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="405"/>
+            <point key="canvasLocation" x="-155" y="412"/>
         </scene>
         <!--EditListViewController-->
         <scene sceneID="tIU-qG-6fd">
             <objects>
-                <viewController id="cbx-3A-gLW" userLabel="EditListViewController" sceneMemberID="viewController">
+                <viewController id="cbx-3A-gLW" userLabel="EditListViewController" customClass="EditListViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5M6-K3-klw"/>
                         <viewControllerLayoutGuide type="bottom" id="T5j-qX-bPc"/>
@@ -604,9 +686,6 @@
                                         <barButtonItem key="backBarButtonItem" title="Back" id="0Xw-I4-usK"/>
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="2P0-8g-mSV">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="49e-Tb-3d3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5hm-j6-pc3"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -616,7 +695,7 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-fj-3yA">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
                         </subviews>
@@ -638,13 +717,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEs-t5-RdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="1075"/>
+            <point key="canvasLocation" x="1487" y="-300"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="imageView" width="417" height="417"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="eZH-jK-BAf"/>
-    </inferredMetricsTieBreakers>
 </document>
