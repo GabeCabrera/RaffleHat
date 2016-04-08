@@ -90,7 +90,7 @@
         <!--Events-->
         <scene sceneID="Q0s-5F-KUe">
             <objects>
-                <viewController id="VmT-Sm-d7R" sceneMemberID="viewController">
+                <viewController id="VmT-Sm-d7R" customClass="EventsViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cv3-0o-wd5"/>
                         <viewControllerLayoutGuide type="bottom" id="zfm-NJ-cse"/>
@@ -185,7 +185,7 @@
         <!--Lists-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Lists" customClass="SecondViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Lists" customClass="ListsViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -213,7 +213,7 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NNU-us-brN" kind="show" id="4iQ-F3-JeV"/>
+                                    <segue destination="NNU-us-brN" kind="show" id="7pV-kV-kGu"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="evH-hr-tR2">
@@ -379,7 +379,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Uc3-lJ-fK9">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="49e-Tb-3d3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="t5n-ja-YSH"/>
+                                                <action selector="createEventCancelButton:" destination="gSr-gg-Udd" id="XeS-Ny-5I8"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -417,7 +417,7 @@
         <!--CreateListViewController-->
         <scene sceneID="B3k-lf-wo7">
             <objects>
-                <viewController id="NNU-us-brN" userLabel="CreateListViewController" sceneMemberID="viewController">
+                <viewController id="NNU-us-brN" userLabel="CreateListViewController" customClass="CreateListViewController" customModule="RaffleHat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fQV-r9-pc2"/>
                         <viewControllerLayoutGuide type="bottom" id="O6s-Zn-eVH"/>
@@ -436,7 +436,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Xty-RA-ZRj">
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="49e-Tb-3d3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="z2c-Vc-pB2"/>
+                                                <action selector="createListCancelButton:" destination="NNU-us-brN" id="3UZ-Mc-FjZ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" id="RRq-bR-stL">
@@ -645,6 +645,6 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z2c-Vc-pB2"/>
+        <segue reference="eZH-jK-BAf"/>
     </inferredMetricsTieBreakers>
 </document>

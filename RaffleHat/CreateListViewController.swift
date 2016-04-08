@@ -1,5 +1,5 @@
 //
-//  CreateEventViewController.swift
+//  CreateListViewController.swift
 //  RaffleHat
 //
 //  Created by Gabe on 4/8/16.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class CreateListViewController: UIViewController {
 
-    @IBAction func createEventCancelButton(sender: AnyObject) {
+    @IBAction func createListCancelButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     override func viewDidLoad() {

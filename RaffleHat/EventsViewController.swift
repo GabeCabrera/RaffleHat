@@ -1,5 +1,5 @@
 //
-//  CreateEventViewController.swift
+//  EventsViewController.swift
 //  RaffleHat
 //
 //  Created by Gabe on 4/8/16.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class EventsViewController: UIViewController {
 
-    @IBAction func createEventCancelButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

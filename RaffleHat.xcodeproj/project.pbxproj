@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE3EDE081CB6943C00EF77C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE071CB6943C00EF77C2 /* AppDelegate.swift */; };
-		CE3EDE0A1CB6943C00EF77C2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE091CB6943C00EF77C2 /* FirstViewController.swift */; };
-		CE3EDE0C1CB6943C00EF77C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE0B1CB6943C00EF77C2 /* SecondViewController.swift */; };
 		CE3EDE0F1CB6943C00EF77C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE0D1CB6943C00EF77C2 /* Main.storyboard */; };
 		CE3EDE111CB6943C00EF77C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */; };
 		CE3EDE141CB6943C00EF77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDE121CB6943C00EF77C2 /* LaunchScreen.storyboard */; };
-		CE3EDE1C1CB704E200EF77C2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */; };
+		CE3EDE1E1CB7DEF200EF77C2 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE1D1CB7DEF200EF77C2 /* CreateEventViewController.swift */; };
+		CE3EDE201CB7DFA300EF77C2 /* CreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE1F1CB7DFA300EF77C2 /* CreateListViewController.swift */; };
+		CE3EDE221CB7E05D00EF77C2 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE211CB7E05D00EF77C2 /* EventsViewController.swift */; };
+		CE3EDE241CB7E07400EF77C2 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE231CB7E07400EF77C2 /* ListsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE3EDE041CB6943C00EF77C2 /* RaffleHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaffleHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3EDE071CB6943C00EF77C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3EDE091CB6943C00EF77C2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CE3EDE0B1CB6943C00EF77C2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CE3EDE0E1CB6943C00EF77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3EDE131CB6943C00EF77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3EDE151CB6943C00EF77C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		CE3EDE1D1CB7DEF200EF77C2 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		CE3EDE1F1CB7DFA300EF77C2 /* CreateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListViewController.swift; sourceTree = "<group>"; };
+		CE3EDE211CB7E05D00EF77C2 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		CE3EDE231CB7E07400EF77C2 /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				CE3EDE071CB6943C00EF77C2 /* AppDelegate.swift */,
-				CE3EDE091CB6943C00EF77C2 /* FirstViewController.swift */,
-				CE3EDE0B1CB6943C00EF77C2 /* SecondViewController.swift */,
-				CE3EDE1B1CB704E200EF77C2 /* CreateEventViewController.swift */,
+				CE3EDE231CB7E07400EF77C2 /* ListsViewController.swift */,
+				CE3EDE211CB7E05D00EF77C2 /* EventsViewController.swift */,
+				CE3EDE1D1CB7DEF200EF77C2 /* CreateEventViewController.swift */,
+				CE3EDE1F1CB7DFA300EF77C2 /* CreateListViewController.swift */,
 				CE3EDE0D1CB6943C00EF77C2 /* Main.storyboard */,
 				CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */,
 				CE3EDE121CB6943C00EF77C2 /* LaunchScreen.storyboard */,
@@ -142,10 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3EDE0C1CB6943C00EF77C2 /* SecondViewController.swift in Sources */,
 				CE3EDE081CB6943C00EF77C2 /* AppDelegate.swift in Sources */,
-				CE3EDE0A1CB6943C00EF77C2 /* FirstViewController.swift in Sources */,
-				CE3EDE1C1CB704E200EF77C2 /* CreateEventViewController.swift in Sources */,
+				CE3EDE221CB7E05D00EF77C2 /* EventsViewController.swift in Sources */,
+				CE3EDE201CB7DFA300EF77C2 /* CreateListViewController.swift in Sources */,
+				CE3EDE1E1CB7DEF200EF77C2 /* CreateEventViewController.swift in Sources */,
+				CE3EDE241CB7E07400EF77C2 /* ListsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
