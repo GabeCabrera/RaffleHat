@@ -18,6 +18,9 @@ class EditEventViewController: UIViewController, UITextFieldDelegate {
     @IBAction func editEventSaveButton(sender: AnyObject) {
         dismissViewController()
     }
+    @IBAction func editEventCountdownSwitch(sender: AnyObject) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         editEventNameTextField.delegate = self

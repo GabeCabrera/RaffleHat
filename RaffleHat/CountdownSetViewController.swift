@@ -1,32 +1,25 @@
 //
-//  CreateEventViewController.swift
+//  CountdownSetViewController.swift
 //  RaffleHat
 //
-//  Created by Gabe on 4/8/16.
+//  Created by Gabe on 4/11/16.
 //  Copyright © 2016 GabeCabrera. All rights reserved.
 //
 
 import UIKit
 
+let createEventViewController = CreateEventViewController()
 
-class CreateEventViewController: UIViewController, UITextFieldDelegate {
+class CountdownSetViewController: UIViewController {
 
-    @IBOutlet weak var eventNameTextField: UITextField!
-    
-    @IBAction func createEventCancelButton(sender: AnyObject) {
-        dismissViewController()
+    @IBAction func countdownCancelButton(sender: AnyObject) {dismissViewControllerAnimated(true, completion: nil)
     }
-    @IBAction func createEventSaveButton(sender: AnyObject) {
-         dismissViewController()
+    @IBAction func countdownSaveButton(sender: AnyObject){dismissViewControllerAnimated(true, completion: nil)
+        
     }
-    
-    @IBOutlet weak var countdownSetSwitch: UISwitch!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventNameTextField.delegate = self
-        hideKeyboardWhenTappedAround()
+
         // Do any additional setup after loading the view.
     }
 
@@ -34,11 +27,8 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func textFieldShouldReturn(userText: UITextField) -> Bool {
-        eventNameTextField.resignFirstResponder()
-        return true;
-    }
     
+
     /*
     // MARK: - Navigation
 

@@ -18,6 +18,7 @@
 		CE3EDE261CB7F0A100EF77C2 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE251CB7F0A100EF77C2 /* EditEventViewController.swift */; };
 		CE3EDE281CB7F0B300EF77C2 /* EditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE271CB7F0B300EF77C2 /* EditListViewController.swift */; };
 		CE3EDE2A1CB7F0C600EF77C2 /* EditPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EDE291CB7F0C600EF77C2 /* EditPictureViewController.swift */; };
+		CE82C95A1CBBE19900801BF0 /* CountdownSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82C9591CBBE19900801BF0 /* CountdownSetViewController.swift */; };
 		CEE52D9A1CB821EC00997B1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE52D991CB821EC00997B1B /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		CE3EDE251CB7F0A100EF77C2 /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		CE3EDE271CB7F0B300EF77C2 /* EditListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListViewController.swift; sourceTree = "<group>"; };
 		CE3EDE291CB7F0C600EF77C2 /* EditPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPictureViewController.swift; sourceTree = "<group>"; };
+		CE82C9591CBBE19900801BF0 /* CountdownSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownSetViewController.swift; sourceTree = "<group>"; };
 		CEE52D991CB821EC00997B1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				CE3EDE1F1CB7DFA300EF77C2 /* CreateListViewController.swift */,
 				CE3EDE271CB7F0B300EF77C2 /* EditListViewController.swift */,
 				CE3EDE291CB7F0C600EF77C2 /* EditPictureViewController.swift */,
+				CE82C9591CBBE19900801BF0 /* CountdownSetViewController.swift */,
 				CE3EDE0D1CB6943C00EF77C2 /* Main.storyboard */,
 				CE3EDE101CB6943C00EF77C2 /* Assets.xcassets */,
 				CE3EDE121CB6943C00EF77C2 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 				CE3EDE2A1CB7F0C600EF77C2 /* EditPictureViewController.swift in Sources */,
 				CEE52D9A1CB821EC00997B1B /* MenuViewController.swift in Sources */,
 				CE3EDE261CB7F0A100EF77C2 /* EditEventViewController.swift in Sources */,
+				CE82C95A1CBBE19900801BF0 /* CountdownSetViewController.swift in Sources */,
 				CE3EDE1E1CB7DEF200EF77C2 /* CreateEventViewController.swift in Sources */,
 				CE3EDE281CB7F0B300EF77C2 /* EditListViewController.swift in Sources */,
 				CE3EDE241CB7E07400EF77C2 /* ListsViewController.swift in Sources */,
