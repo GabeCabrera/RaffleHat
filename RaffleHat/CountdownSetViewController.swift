@@ -8,11 +8,16 @@
 
 import UIKit
 
-let createEventViewController = CreateEventViewController()
+let createEventVC = CreateEventViewController()
 
 class CountdownSetViewController: UIViewController {
 
-    @IBAction func countdownCancelButton(sender: AnyObject) {dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func countdownCancelButton(sender: AnyObject) {
+        
+        if createEventVC.countdownSetSwitch.on {
+            createEventVC.countdownSetSwitch.setOn(false, animated: true)
+        }
+        dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func countdownSaveButton(sender: AnyObject){dismissViewControllerAnimated(true, completion: nil)
         
