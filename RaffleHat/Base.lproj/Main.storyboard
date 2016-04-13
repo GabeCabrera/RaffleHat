@@ -508,6 +508,7 @@
                                 <color key="onTintColor" red="1" green="0.35686274509999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
+                                    <action selector="setCountdown:" destination="gSr-gg-Udd" eventType="valueChanged" id="fJ2-QK-JT6"/>
                                     <segue destination="7Ty-UX-PO4" kind="show" identifier="segueToCountdownVC" id="6qB-AT-FQg"/>
                                 </connections>
                             </switch>

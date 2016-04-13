@@ -10,11 +10,14 @@ import UIKit
 
 
 class CreateEventViewController: UIViewController, UITextFieldDelegate {
+    
 
     @IBOutlet weak var eventNameTextField: UITextField!
     
     @IBAction func createEventCancelButton(sender: AnyObject) {
+        
         dismissViewController()
+        
     }
     @IBAction func createEventSaveButton(sender: AnyObject) {
          dismissViewController()
@@ -22,6 +25,23 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var countdownSetSwitch: UISwitch!
     
+    @IBAction func setCountdown(sender: AnyObject) {
+        if countdownSetSwitch.on == false{
+           // countdownSetSwitch.setOn(true, animated: true)
+        }
+    }
+    func resetCountdownSwitch(){
+        countdownSetSwitch.setOn(false, animated: true)
+        if countdownSetSwitch.on == true{
+            print("true")
+        } else {
+            print("false")
+        }
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        resetCountdownSwitch()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
